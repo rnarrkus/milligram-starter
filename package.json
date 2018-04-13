@@ -19,15 +19,19 @@
 		"ncp": "^2.0.0",
 		"npm-run-all": "^3.1.2",
 		"onchange": "^3.2.0",
+		"pug": "^2.0.3",
+		"stylus": "^0.54.5",
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
 		"start": "run-s clean build bower && run-p watch serve",
 		"clean": "rimraf dist",
 		"bower": "ncp bower_components dist/lib",
-		"build": "ncp src dist",
-		"watch": "onchange src/* -- run-s build",
-		"serve": "browser-sync --no-notify start -s dist -f dist",
+		"build": "ncp src dist && run-s pug stylus",
+		"pug": "pug dist/* && find ./dist -name '*.pug' -delete",
+		"stylus": "stylus src/styles/app.styl -o dist/styles/style.css && find ./dist -name '*.styl' -delete",
+		"watch": "onchange src/* -- run-s build pug",
+		"serve": "browser-sync --no-notify start -s --port 4000 dist -f dist",
 		"test": "run-s clean build bower",
 		"postinstall": "bower i",
 		"prestart": "npm i"

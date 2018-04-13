@@ -1,15 +1,6 @@
 <a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
 
-> A super simple boilerplate project with Milligram.
-
-[![Travis Status](https://travis-ci.org/milligram/milligram-starter.svg?branch=master)](https://travis-ci.org/milligram/milligram-starter?branch=master)
-[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/djotpoy1698b3k9k?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram-starter)
-[![Codacy Status](https://img.shields.io/codacy/grade/13f5caac73ed4964a2394aa857ebc3a2/master.svg)](https://www.codacy.com/app/milligram/milligram-starter/dashboard)
-[![Dependencies Status](https://david-dm.org/milligram/milligram-starter.svg)](https://travis-ci.org/milligram/milligram-starter?branch=master)
-[![Version Status](https://badge.fury.io/js/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
-[![Download Status](https://img.shields.io/npm/dt/milligram-starter.svg)](https://www.npmjs.com/package/milligram-starter)
-[![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/milligram/milligram)
-
+> Fork of the super simple boilerplate project with Milligram, with Pug & Stylus.
 
 ## Why it's awesome?
 
